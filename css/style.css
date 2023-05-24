@@ -3,8 +3,30 @@ body {
     font-size: 1.5rem;
 }
 
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.moFaya {
+    width: 40%;
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+}
+
+
+.links {
+    width: 50%;
+}
+
 li {
-    line-height: 1.6 ;
+    line-height: 1.6;
 }
 
 li {
@@ -22,4 +44,15 @@ h1, h3, p, a, li {
 
 a:active {
     opacity: 50%;;
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .links,
+    .moFaya {
+        width: 100%;
+    }
 }
