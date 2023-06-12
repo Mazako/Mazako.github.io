@@ -4,6 +4,20 @@ body {
     color: white;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    display: inline-block;
+
+}
+
+.nav-img {
+    width: 100px;
+    height: 100px;
+}
 main {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
