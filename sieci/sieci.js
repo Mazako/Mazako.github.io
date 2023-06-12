@@ -38,7 +38,10 @@ let paragraph = document.getElementById('result-paragraph')
 calcButton.addEventListener('click', () => {
     const subnets = [Number(subnet0.value), Number(subnet1.value), Number(subnet2.value), Number(subnet3.value), Number(subnet4.value)]
     const ipAddress = [Number(ip0.value), Number(ip1.value), Number(ip2.value), Number(ip3.value)]
-    paragraph.innerHTML = performSubnetting(ipAddress, subnets);
+
+    let result = performSubnetting(ipAddress, subnets).join("\n");
+    paragraph.innerHTML = result
+    navigator.clipboard.writeText(result).then(r => console.log('coppied to clipboard'))
 })
 const addToIpAddress = (ipAddress, count) => {
     let newAddress = [...ipAddress]
