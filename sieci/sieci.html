@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kalkulator na sieci</title>
+    <link rel="stylesheet" href="sieci.css">
+</head>
+<body>
+<nav>
+
+</nav>
+<main>
+    <div id="input-panel">
+        <div id="ip-address">
+            <p>IP: </p>
+            <input type="number" id="ip-0">
+            <input type="number" id="ip-1">
+            <input type="number" id="ip-2">
+            <input type="number" id="ip-3">
+        </div>
+        <div id="hosts">
+            <p>Hosty: </p>
+            <ul>
+                <li>Podsieć 0: <input type="number" id="subnet-0"></li>
+                <li>Podsieć 1: <input type="number" id="subnet-1"></li>
+                <li>Podsieć 2: <input type="number" id="subnet-2"></li>
+                <li>Podsieć 3: <input type="number" id="subnet-3"></li>
+                <li>Podsieć 4: <input type="number" id="subnet-4"></li>
+            </ul>
+        </div>
+        <div id="buttons">
+            <button class="calc-button">Policz</button>
+        </div>
+    </div>
+    <div id="results">
+        <p id="result-paragraph"></p>
+    </div>
+    <script src="sieci.js"></script>
+</main>
+</body>
+</html>

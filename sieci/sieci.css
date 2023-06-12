@@ -1,0 +1,42 @@
+body {
+    background-color: #121212;
+    font-size: 1.9rem;
+    color: white;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#input-panel {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+}
+
+#ip-address > input {
+    width: 64px;
+}
+
+#results {
+    grid-row: 1 / span 2;
+    grid-column: 3 / span 1;
+    font-size: 18px;
+}
+
+#hosts input {
+    width: 32px;
+}
+
+input {
+    font-size: inherit;
+}
+
+.calc-button {
+    font-size: inherit;
+}
+
+#result-paragraph {
+    white-space: pre;
+}
