@@ -106,7 +106,7 @@ const performSubnetting = (ipAddress, subnetsToCalculate) => {
         subnets.push(
             {
                 address: currentAddress,
-                subnetMask: SUBNET_MASK_MAP.get(prefix),
+                subnetMask: SUBNET_MASK_MAP.get(prefix).join("."),
                 prefix: prefix,
                 allHosts: countOfAllAddresses - 2,
                 broadcast: subtractFromIpAddress(nextSubnet, 1),
