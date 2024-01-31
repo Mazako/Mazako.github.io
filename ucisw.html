@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ucisw VHDL</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    pre {
+      color: aliceblue;
+    }
+  </style>
+</head>
+<body>
+<pre>
+///////////////////////////////////////////////////////////////////////
+VHDL zebrane:
+NIE NIE NIE
+- NIE można zagnieżdżać instrukcji procesów
+- instrukcja przypisania zmiennej NIE może wystąpić wprost z bloku architektury
+- sygnały niezainicjowane jawnie NIE mają nieokreślonych wartości początkowych
+- instrukcja for ... generate NIE może wystąpić wewnątrz procesu
+- lista warunków w instrukcji przypisania sygnału when ... else NIE musi być rozłączna i wyczerpująca
+- każdy sygnał aktywny w pewnym cyklu symulacji NIE ma także w tym cyklu zdarzenia
+- instrukcja instancji komponentu NIE może wystąpić wewnątrz procesu
+- proces z listą wrażliwości sygnałów NIE zostanie wykonany w każdym cyklu symulacji, w którym dowolny sygnał z listy jest aktywny
+- w cyklu symulacji aktualizacja wartości sygnałów odbywa się po wykonaniu wszystkich procesów
+NIE NIE NIE
+
+TAK TAK TAK
+- w treści architektury mogą wystąpić wyłącznie instrukcje współbieżne
+- instrukcje for ... generate można zagnieżdżać
+- typ STD_ULOGIC można stosować wyłącznie do sygnałów, które mają tylko jeden sterownik
+- każda instrukcja instancji komponentu musi mieć etykietę
+-  opisy przerzutników muszą pośrednio lub bezpośrednio odwoływać się do artykułu 'EVENT
+- instrukcja iteracyjna for ... loop może wystąpić wyłącznie wewnątrz procesu
+- podczas wykonywania procesu wartości sygnałów w nim nie zmieniają się
+- lista warunków w instrukcji case ... when musi być rozłączna i wyczerpująca
+- w cyklu symulacji aktualizacja wartości wszystkich sygnałów odbywa się przed wykonaniem procesów
+TAK TAK TAK
+</pre>
+</body>
+</html>
